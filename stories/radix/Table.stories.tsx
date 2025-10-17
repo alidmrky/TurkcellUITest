@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { DataTable } from '@/components/radix/Table';
 import { ColumnDef } from '@tanstack/react-table';
-import { mockFinancialData, FinancialAccount } from '@/src/data/mockFinancialData';
+import { mockFinancialData, FinancialAccount } from '../../src/data/mockFinancialData';
 import { ArrowUpDown, MoreHorizontal } from 'lucide-react';
 
 const meta: Meta<typeof DataTable> = {
