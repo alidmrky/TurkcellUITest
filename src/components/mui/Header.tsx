@@ -38,7 +38,6 @@ interface HeaderProps extends AppBarProps {
     label: string;
     href: string;
   }>;
-  };
   onLogin?: () => void;
   onSignup?: () => void;
   onLogout?: () => void;
