@@ -49,11 +49,29 @@ const preview: Preview = {
 
   decorators: [
     (Story, context) => {
-      // Force light mode by adding data attribute
+      // Force light mode by adding data attribute and CSS
       if (typeof document !== 'undefined') {
         document.documentElement.setAttribute('data-theme', 'light');
         document.documentElement.classList.remove('dark');
         document.documentElement.classList.add('light');
+        
+        // Force light mode with CSS
+        const style = document.createElement('style');
+        style.textContent = `
+          html, body {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+          }
+          .dark {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+          }
+          [data-theme="dark"] {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+          }
+        `;
+        document.head.appendChild(style);
       }
       return Story();
     },
