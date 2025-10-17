@@ -4,7 +4,7 @@ import { Meta } from '@storybook/blocks';
 
 # UI Bileşen Kütüphaneleri Karşılaştırması
 
-Bu Storybook projesi, iki farklı UI bileşen yaklaşımını karşılaştırmak için oluşturulmuştur:
+Bu Storybook projesi, üç farklı UI bileşen yaklaşımını karşılaştırmak için oluşturulmuştur:
 
 ## 🎨 shadcn/ui Yaklaşımı
 
@@ -58,16 +58,46 @@ Bu Storybook projesi, iki farklı UI bileşen yaklaşımını karşılaştırmak
 - Erişilebilirlik öncelikli projeler
 - Öğrenme amaçlı projeler
 
+## 🎨 Material-UI Yaklaşımı
+
+**Material-UI (MUI)**, Google'ın Material Design prensiplerini takip eden kapsamlı bir React UI kütüphanesidir.
+
+### Özellikler:
+
+- ✅ **Material Design** - Google'ın tasarım sistemi
+- ✅ **Kapsamlı Bileşen Seti** - 100+ hazır bileşen
+- ✅ **Tema Sistemi** - Kolay özelleştirme
+- ✅ **TypeScript** desteği
+- ✅ **Erişilebilirlik** odaklı
+- ✅ **Responsive** tasarım
+- ✅ **Icon Kütüphanesi** - 2000+ ikon
+
+### Avantajları:
+
+- Hızlı geliştirme
+- Tutarlı tasarım
+- Kapsamlı dokümantasyon
+- Güçlü tema sistemi
+- Enterprise desteği
+
+### Kullanım Alanları:
+
+- Kurumsal uygulamalar
+- Hızlı prototipleme
+- Material Design projeleri
+- Kapsamlı uygulamalar
+
 ## 🔍 Karşılaştırma
 
-| Özellik             | shadcn/ui | Radix UI  |
-| ------------------- | --------- | --------- |
-| **Kurulum**         | Kolay     | Orta      |
-| **Özelleştirme**    | Yüksek    | Maksimum  |
-| **Erişilebilirlik** | İyi       | Mükemmel  |
-| **Bundle Boyutu**   | Küçük     | Çok Küçük |
-| **Öğrenme Eğrisi**  | Düşük     | Orta      |
-| **Hız**             | Hızlı     | Orta      |
+| Özellik             | shadcn/ui | Radix UI  | Material-UI |
+| ------------------- | --------- | --------- | ----------- |
+| **Kurulum**         | Kolay     | Orta      | Kolay       |
+| **Özelleştirme**    | Yüksek    | Maksimum  | Yüksek      |
+| **Erişilebilirlik** | İyi       | Mükemmel  | Mükemmel    |
+| **Bundle Boyutu**   | Küçük     | Çok Küçük | Orta        |
+| **Öğrenme Eğrisi**  | Düşük     | Orta      | Düşük       |
+| **Hız**             | Hızlı     | Orta      | Hızlı       |
+| **Bileşen Sayısı**  | Orta      | Az        | Çok         |
 
 ## 🚀 Hangi Yaklaşımı Seçmeli?
 
@@ -85,21 +115,32 @@ Bu Storybook projesi, iki farklı UI bileşen yaklaşımını karşılaştırmak
 - Özel tasarım sisteminiz varsa
 - Öğrenmek istiyorsanız
 
+### Material-UI Seçin Eğer:
+
+- Material Design kullanmak istiyorsanız
+- Kapsamlı bileşen seti arıyorsanız
+- Kurumsal uygulama geliştiriyorsanız
+- Hızlı prototipleme yapıyorsanız
+
 ## 📁 Proje Yapısı
 
 ```
 src/
 ├── components/
 │   ├── ui/           # shadcn/ui bileşenleri
-│   └── radix/        # Radix UI bileşenleri
+│   ├── radix/        # Radix UI bileşenleri
+│   └── mui/          # Material-UI bileşenleri
 stories/
 ├── shadcn/          # shadcn/ui story'leri
 ├── radix/           # Radix UI story'leri
+├── mui/             # Material-UI story'leri
 └── Intro.mdx        # Bu dosya
 ```
 
 ## 🎯 Sonuç
 
-Her iki yaklaşım da kendi avantajlarına sahiptir. Projenizin ihtiyaçlarına göre seçim yapabilir veya her ikisini de birlikte kullanabilirsiniz.
+Her üç yaklaşım da kendi avantajlarına sahiptir. Projenizin ihtiyaçlarına göre seçim yapabilir veya bunları birlikte kullanabilirsiniz.
 
-**shadcn/ui** hızlı geliştirme için, **Radix UI** ise maksimum kontrol ve erişilebilirlik için idealdir.
+- **shadcn/ui** - Hızlı geliştirme ve modern tasarım için
+- **Radix UI** - Maksimum kontrol ve erişilebilirlik için  
+- **Material-UI** - Kapsamlı bileşen seti ve Material Design için
