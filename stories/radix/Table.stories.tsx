@@ -89,8 +89,22 @@ const basicColumns: ColumnDef<FinancialAccount>[] = [
     header: 'Status',
     cell: ({ row }) => {
       const status = row.getValue('status') as string;
+      const getStatusVariant = (status: string) => {
+        switch (status) {
+          case 'active':
+            return 'active';
+          case 'inactive':
+            return 'inactive';
+          case 'pending':
+            return 'pending';
+          case 'suspended':
+            return 'suspended';
+          default:
+            return 'secondary';
+        }
+      };
       return (
-        <Badge variant={status === 'active' ? 'default' : 'secondary'}>
+        <Badge variant={getStatusVariant(status)}>
           {status}
         </Badge>
       );
@@ -168,8 +182,22 @@ const sortableColumns: ColumnDef<FinancialAccount>[] = [
     },
     cell: ({ row }) => {
       const status = row.getValue('status') as string;
+      const getStatusVariant = (status: string) => {
+        switch (status) {
+          case 'active':
+            return 'active';
+          case 'inactive':
+            return 'inactive';
+          case 'pending':
+            return 'pending';
+          case 'suspended':
+            return 'suspended';
+          default:
+            return 'secondary';
+        }
+      };
       return (
-        <Badge variant={status === 'active' ? 'default' : 'secondary'}>
+        <Badge variant={getStatusVariant(status)}>
           {status}
         </Badge>
       );
