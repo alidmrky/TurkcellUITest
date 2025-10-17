@@ -137,10 +137,61 @@ stories/
 └── Intro.mdx        # Bu dosya
 ```
 
+## 📊 Table ve DataGrid Karşılaştırması
+
+Bu projede her üç kütüphane için Table/DataGrid bileşenleri de implement edilmiştir:
+
+### shadcn/ui Table
+- **TanStack Table** entegrasyonu
+- **Tailwind CSS** styling
+- **Sorting, Pagination, Filtering** desteği
+- **Column visibility** kontrolü
+- **Row selection** özelliği
+- **Responsive** tasarım
+
+### Radix UI Table
+- **TanStack Table** entegrasyonu
+- **CSS Modules** ile styling
+- **Sorting, Pagination, Filtering** desteği
+- **Column visibility** kontrolü
+- **Row selection** özelliği
+- **Custom styling** imkanı
+
+### Material-UI Table
+- **Material-UI Table** komponenti
+- **Built-in sorting** ve pagination
+- **Search** ve filtering
+- **Row selection** desteği
+- **Striped rows** ve dense mode
+- **Responsive** tasarım
+
+### Material-UI DataGrid
+- **MUI DataGrid** komponenti
+- **Built-in sorting, pagination, filtering**
+- **Column visibility** kontrolü
+- **Export** özelliği
+- **Density** seçenekleri
+- **Advanced features** (toolbar, actions)
+
+## 🔍 Table/DataGrid Karşılaştırması
+
+| Özellik             | shadcn/ui | Radix UI  | MUI Table | MUI DataGrid |
+| ------------------- | --------- | --------- | --------- | ------------ |
+| **Kurulum**         | Kolay     | Orta      | Kolay     | Kolay        |
+| **Özelleştirme**    | Yüksek    | Maksimum  | Yüksek    | Yüksek       |
+| **Sorting**         | ✅        | ✅        | ✅        | ✅           |
+| **Pagination**      | ✅        | ✅        | ✅        | ✅           |
+| **Filtering**       | ✅        | ✅        | ✅        | ✅           |
+| **Selection**       | ✅        | ✅        | ✅        | ✅           |
+| **Export**          | ❌        | ❌        | ❌        | ✅           |
+| **Density Control** | ❌        | ❌        | ✅        | ✅           |
+| **Advanced Features** | Orta    | Orta      | Orta      | Yüksek       |
+| **Bundle Boyutu**   | Küçük     | Çok Küçük | Orta      | Büyük        |
+
 ## 🎯 Sonuç
 
 Her üç yaklaşım da kendi avantajlarına sahiptir. Projenizin ihtiyaçlarına göre seçim yapabilir veya bunları birlikte kullanabilirsiniz.
 
 - **shadcn/ui** - Hızlı geliştirme ve modern tasarım için
-- **Radix UI** - Maksimum kontrol ve erişilebilirlik için  
+- **Radix UI** - Maksimum kontrol ve erişilebilirlik için
 - **Material-UI** - Kapsamlı bileşen seti ve Material Design için
