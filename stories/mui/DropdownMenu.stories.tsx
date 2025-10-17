@@ -57,7 +57,7 @@ export const UserMenu: Story = {
       { label: 'Sign Out', icon: <ExitToApp />, onClick: () => alert('Sign out clicked') },
     ],
     trigger: (
-      <Button variant="contained" startIcon={<Person />>
+      <Button variant="contained" startIcon={<Person />}>
         User Menu
       </Button>
     ),
