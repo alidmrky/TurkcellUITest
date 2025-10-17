@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { DataTable } from '@/components/radix/Table';
+import { DataTable } from '../../src/components/radix/Table';
 import { ColumnDef } from '@tanstack/react-table';
 import { mockFinancialData, FinancialAccount } from '../../src/data/mockFinancialData';
 import { ArrowUpDown, MoreHorizontal } from 'lucide-react';

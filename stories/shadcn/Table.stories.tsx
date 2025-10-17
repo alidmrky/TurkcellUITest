@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { DataTable } from '@/components/ui/data-table';
+import { DataTable } from '../../src/components/ui/data-table';
 import { ColumnDef } from '@tanstack/react-table';
 import { mockFinancialData, FinancialAccount } from '../../src/data/mockFinancialData';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { Badge } from '../../src/components/ui/badge';
+import { Button } from '../../src/components/ui/button';
 import { ArrowUpDown, MoreHorizontal } from 'lucide-react';
 import {
   DropdownMenu,
@@ -12,7 +12,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from '../../src/components/ui/dropdown-menu';
 
 const meta: Meta<typeof DataTable> = {
   title: 'shadcn/Table',

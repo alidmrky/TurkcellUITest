@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { DataTable } from '@/components/mui/Table';
+import { DataTable } from '../../src/components/mui/Table';
 import { mockFinancialData } from '../../src/data/mockFinancialData';
 
 const meta: Meta<typeof DataTable> = {

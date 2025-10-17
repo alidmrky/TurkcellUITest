@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { DataGrid } from '@/components/mui/DataGrid';
+import { DataGrid } from '../../src/components/mui/DataGrid';
 import { mockFinancialData } from '../../src/data/mockFinancialData';
 
 const meta: Meta<typeof DataGrid> = {
